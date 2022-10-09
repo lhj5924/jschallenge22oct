@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+
+* {
+  overflow-wrap: break-word;
+  color: white;
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content:space-evenly;
+}
+
+.hidden {
+  display: none;
+}
+
+.container {
+  width: 33%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container__box {
+  margin: 10px 0px;
+  width: max-content;
+}
+
+
+#clock {
+  font-size: 10em;
+  text-shadow: 5px 5px 5px rgba(0,0,0,0.7);
+  position: relative;
+  top: 30px;
+}
+
+
+#login-form input{
+  border-top-style: none;
+  border-right-style: none;
+  border-bottom-style: 10px solid;
+  border-bottom-color: white;
+  border-left-style: none;
+  background-color: transparent;
+}
+#login-form input::placeholder {
+  color: white;
+}
+#login-form input:focus {
+  background-color: rgba(0,0,0,0.2);
+  border: none;
+}
+#login-form__button {
+  color:black;
+  border: none;
+  border-radius: 25px;
+  padding : 3px 10px;
+  background-color: white;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+}
+
+#greeting {
+  font-size: 60px;
+}
+
+
+.bgImgBox {
+  background-size:cover;
+  background-attachment: fixed;
+  background-color: bisque;
+}
+
+#quote{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.container:nth-child(2) {
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+}
+
+
+.container {
+  position: relative;
+}
+
+.weather {
+  height: 100px;
+  position: fixed;
+  top: 20px;
+  right: 0px;
+}
+
+
+.todo-form input {
+  color: black;
+}
+
+.todo-form::placeholder {
+  color: rgba(0,0,0,0.7);
+}
+
+.todo-list > li {
+  text-align: end;
+}
+
+
+
+
+@media screen and (max-width: 1400px){
+  .bgImgBox {
+    background-size:100vw;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  * {
+    font-size: 15px;
+  }
+  #greeting {
+    font-size: 50px;
+  }
+  .container:first-child {
+    height: 10vh;
+  }
+  .container:first-child {
+    height: 30vh;
+  }
+  .container:last-child {
+    height: 50vh;
+  }
+}
+
+@media screen and (max-width: 600px){
+#clock {
+  font-size: 5em;
+}
+#greeting {
+  font-size: 30px;
+}
+}
